@@ -23,4 +23,4 @@ RUN ng build --configuration=production
 EXPOSE 80
 
 # Start the Angular app (replace 'your-app-name' with your actual app name)
-CMD ["ng", "serve", "--host", "0.0.0.0", "--port", "80", "--disable-host-check", "--public-host", "Notflix"]
+CMD ["ng", "serve", "--host", "0.0.0.0", "--port", "80", "--disable-host-check", "--public-host", "notflixapp"]
