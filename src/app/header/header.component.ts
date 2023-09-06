@@ -4,6 +4,7 @@ import {
   ElementRef,
   Renderer2,
   ViewChild,
+  HostListener,
 } from '@angular/core';
 import { MovieService } from 'src/app/services/movie.service';
 
@@ -13,12 +14,18 @@ import { MovieService } from 'src/app/services/movie.service';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
+  // isScrolled: boolean = false;
   constructor(
     private service: MovieService,
     private renderer: Renderer2
   ) {}
   @ViewChild('scienceFiction') scienceFiction!: ElementRef;
   @ViewChild('animation') animation!: ElementRef;
+//   @HostListener("window:scroll", [])
+// onWindowScroll() {
+//   // Sayfa scroll edildiğinde bu fonksiyon çalışır.
+//   this.isScrolled = window.scrollY > 0; // Sayfa scroll edildikçe isScrolled'ı güncelle.
+// }
 
   scrollToSection(section: ElementRef) {
     section.nativeElement.scrollIntoView({ behavior: 'smooth' });

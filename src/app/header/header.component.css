@@ -7,3 +7,7 @@
     color:rgb(255, 0, 0);
     font-size:25px;
 }
+.scroll-header {
+    background-color: black;
+    transition: background-color 0.3s ease; /* Bir geçiş efekti eklemek için. */
+  }

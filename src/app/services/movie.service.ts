@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of, BehaviorSubject } from 'rxjs';
-interface Movie {
+export interface Movie {
   id: number;
   backdrop_path: string;
   genres: string[];
@@ -29,7 +29,7 @@ export class MovieService {
       release_date: '2010-07-22',
       runtime: 148,
       title: 'Inception',
-      rating: 8.456,
+      rating: 8.4,
       url: 'https://www.youtube.com/embed/YoHD9XEInc0',
     },
     {
@@ -43,7 +43,7 @@ export class MovieService {
       release_date: '2021-09-15',
       runtime: 155,
       title: 'Dune',
-      rating: 0,
+      rating: 6.7,
       url: 'https://www.youtube.com/embed/n9xhJrPXop4',
     },
     {
@@ -57,7 +57,7 @@ export class MovieService {
       release_date: '2014-11-05',
       runtime: 169,
       title: 'Interstellar',
-      rating: 0,
+      rating: 7.8,
       url: 'https://www.youtube.com/embed/zSWdZVtXT7E',
     },
     {
@@ -71,7 +71,7 @@ export class MovieService {
       release_date: '2001-07-20',
       runtime: 125,
       title: 'Spirited Away',
-      rating: 0,
+      rating: 5.4,
       url: 'https://www.youtube.com/embed/ByXuk9QqQkk',
     },
     {
@@ -85,7 +85,7 @@ export class MovieService {
       release_date: '2023-05-31',
       runtime: 140,
       title: 'Spider-Man: Across the Spider-Verse',
-      rating: 8.459,
+      rating: 8.4,
       url: 'https://www.youtube.com/embed/bgqGdIoa52s',
     },
     {
@@ -99,7 +99,7 @@ export class MovieService {
       release_date: '2008-06-22',
       runtime: 98,
       title: 'WALL·E',
-      rating: 8.077,
+      rating: 8.0,
       url: 'https://www.youtube.com/embed/CZ1CATNbXg0',
     },
     {
@@ -113,7 +113,7 @@ export class MovieService {
       release_date: '2020-12-25',
       runtime: 101,
       title: 'Soul',
-      rating: 8.15,
+      rating: 8.1,
       url: 'https://www.youtube.com/embed/xOsLIiBStEs',
     },
     {
@@ -127,7 +127,7 @@ export class MovieService {
       release_date: '1995-10-30',
       runtime: 81,
       title: 'Toy Story',
-      rating: 7.969,
+      rating: 7.9,
       url: 'https://www.youtube.com/embed/v-PjgYDrg70',
     },
     {
@@ -141,7 +141,7 @@ export class MovieService {
       release_date: '1994-06-24',
       runtime: 89,
       title: 'The Lion King',
-      rating: 8.256,
+      rating: 8.2,
       url: 'https://www.youtube.com/embed/7TavVZMewpY',
     },
     {
@@ -155,7 +155,7 @@ export class MovieService {
       release_date: '2018-07-13',
       runtime: 147,
       title: 'Mission: Impossible - Fallout',
-      rating: 7.412,
+      rating: 7.4,
       url: 'https://www.youtube.com/embed/wb49-oV0F78',
     },
     {
@@ -169,7 +169,7 @@ export class MovieService {
       release_date: '2015-04-29',
       runtime: 101,
       title: 'John Wick',
-      rating: 7.434,
+      rating: 7.7,
       url: 'https://www.youtube.com/embed/v_lYz3LKKgM',
     },
     {
@@ -183,7 +183,7 @@ export class MovieService {
       release_date: '1975-12-231',
       runtime: 77,
       title: 'Kara Murat',
-      rating: 5.678,
+      rating: 5.6,
       url: 'https://www.youtube.com/embed/gYmfyZBSS40',
     },
     {
@@ -197,7 +197,7 @@ export class MovieService {
       release_date: '1968-02-08',
       runtime: 161,
       title: 'The Good, the Bad and the Ugly',
-      rating: 8.500,
+      rating: 8.5,
       url: 'https://www.youtube.com/embed/WCN5JJY_wiA',
     },
     {
@@ -211,12 +211,12 @@ export class MovieService {
       release_date: '1982-06-24',
       runtime: 92,
       title: 'Rambo',
-      rating: 6.785,
+      rating: 6.7,
       url: 'https://www.youtube.com/embed/MIKcO4u5YmQ',
     },
     {
       id: 16,
-      backdrop_path: 'assets/lionking-poster.jpg',
+      backdrop_path: 'assets/fastandfurious-poster.png',
       genres: ['Action'],
       original_title: 'Fast & Furious',
       overview:
@@ -225,7 +225,7 @@ export class MovieService {
       release_date: '2000-05-24',
       runtime: 107,
       title: 'Fast & Furious',
-      rating: 7.785,
+      rating: 7.7,
       url: 'https://www.youtube.com/embed/2j5hfDD1szc',
     },
     {
@@ -239,7 +239,7 @@ export class MovieService {
       release_date: '2023-01-27',
       runtime: 107,
       title: 'Plane',
-      rating: 7.00,
+      rating: 7.0,
       url: 'https://www.youtube.com/embed/iyzCEy1SK_g',
     },
   ];
